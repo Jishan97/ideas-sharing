@@ -90,8 +90,9 @@ next();
  app.use('/ideas',ideas);
  app.use('/users',users);
 // port
-    const port = 5000;
+    //const port = 5000;
 
+    const port = process.SET.PORT || 5000;
     app.listen(port,()=>{
         console.log(`Server on port ${port}`);
     });
